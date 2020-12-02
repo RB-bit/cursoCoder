@@ -1,0 +1,49 @@
+// Colores, gradients y tipografías
+@import "variables";
+
+.top-nav-collapse {
+    background-color: $negro;
+  }
+
+.menu {
+    font-family: $tipo1;
+    color: $blanco;
+    
+
+    .menu__items {
+        margin: 0 15px;
+        text-decoration: none;
+        color: $blanco;
+        letter-spacing: 2px;
+        font-weight: 500px;
+        position: relative;
+      }
+    
+    .menu__items:before {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: $lila;
+        visibility: hidden;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .menu__items:hover:before {
+        visibility: visible;
+        width: 100%;
+    }
+
+    .menu__IconWpp {
+        color: $blanco;
+        padding: 15px;
+        font-size: 25px;
+    }
+
+    .menu__IconWpp:hover {
+        color: $lila;
+        text-decoration: none;
+    }
+}
