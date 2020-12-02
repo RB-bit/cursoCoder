@@ -1,0 +1,105 @@
+
+// Colores, gradients y tipografías
+@import "variables";
+
+
+@mixin cardServicios {
+    
+      .card__Servicios {
+        padding: 40px 0;
+      }
+    
+      .card__Servicios--1 {
+        position: relative;
+        width: 270px;
+        height: 380px;
+        box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.05),
+                    inset -5px -5px 5px rgba(255, 255, 255, 0.5),
+                    5px 5px 5px rgba(0, 0, 0, 0.05),
+                    -5px -5px 5px rgba(255, 255, 255, 0.5);
+        border-radius: 15px;
+        margin: 30px;
+      }
+    
+      .box {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        right: 20px;
+        bottom: 20px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        border-radius: 15px;
+        transition: 0.5s;
+      }
+    
+      .card__Servicios--1:hover .box{
+        transform: translateY(-50px);
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+        background: $gradient;
+      }
+    
+    
+      .box__Content{
+        padding: 20px;
+        text-align: center;
+
+        .box__Content--Nro {
+            position: absolute;
+            top: -10px;
+            right: 30px;
+            font-size: 8em;
+            color: rgba(0, 0, 0, 0.02);
+            transition: 0.5s;
+            pointer-events: none;
+          }
+
+          .box__Content--Titulo{
+            font-size: 1.8em;
+            color: $blanco;
+            z-index: 1;
+            transition: 0.5s;
+          }
+
+        
+      }
+    
+      .card__Servicios:hover .box__Content--Nro{
+        color: rgba(0, 0, 0, 0.05);
+      }
+    
+    
+      .card__Servicios--1:hover .box__content--Titulo
+      {
+        color: $blanco;
+      }
+    
+      .box__Content--Txt{
+        font-size: 1em;
+        font-weight: 300;
+        color: $blanco;
+        z-index: 1;
+        transition: 0.5s;
+      }
+    
+      .card__Servicios--1:hover .box__content--Txt
+      {
+        color: $blanco;
+      }
+    
+      .box__Content--Link{
+        position: relative;
+        padding: 8px 20px;
+        background: $lila;
+        margin-top: 15px;
+        border-radius: 20px;
+        color: $blanco;
+        text-decoration: none;
+        font-weight: 400;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+      }
+    
+      .card__Servicios--1:hover .box__Content--Link{
+        background: #828282;
+      }
+}
+    

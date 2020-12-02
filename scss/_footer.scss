@@ -1,0 +1,20 @@
+// Colores, gradients y tipografías
+@import "variables";
+
+.pie {
+    background: $gris;
+    width: 100%;
+    padding: 5% 5% 10% 5%;
+    color: $blanco;
+
+    .pie__Icons{
+        color: $blanco;
+        padding: 15px;
+        font-size: 25px;
+    }
+    
+    .pie__Icons:hover {
+        color: $lila;
+        text-decoration: none;
+    }
+}
