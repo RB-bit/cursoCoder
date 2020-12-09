@@ -48,7 +48,7 @@
 .home {
   background: url(../imagenes/home.png) no-repeat center center fixed;
   display: table;
-  height: 600px;
+  height: 700px;
   width: 100%;
   position: relative; }
   .home .home__Text {
@@ -57,9 +57,11 @@
     vertical-align: middle;
     color: #fff; }
     .home .home__Text .home__Text-1 {
-      font-family: "Archivo Black"; }
+      font-family: "Archivo Black";
+      font-size: 300%; }
     .home .home__Text .home__Text-2 {
-      font-family: "Nunito"; }
+      font-family: "Nunito";
+      font-size: 1.5rem; }
   .home .home__IconScroll {
     color: #9C00FF;
     margin-top: 35px; }
@@ -86,7 +88,7 @@
       height: 0.5rem;
       background-color: #fff;
       display: block;
-      border-radius: 50%;
+      border-radius: 50px;
       margin: auto;
       animation: move-wheel 1s linear infinite; }
   .home .scroll .scroll__arrow--item {
@@ -155,7 +157,7 @@
 @media (max-width: 769px) {
   .menu__Logo {
     width: 115px;
-    height: 29px; }
+    height: 30px; }
   .home__Text-1 {
     font-size: 300%; }
   .proyectos__Copy {
@@ -179,6 +181,7 @@
   background: #bbb9b9;
   margin-top: 77px;
   padding-bottom: 30px;
+  padding-top: 20px;
   font-family: 'Nunito'; }
   .servicios .card__Servicios .card__Servicios {
     padding: 40px 0; }
@@ -223,7 +226,7 @@
   .servicios .card__Servicios .card__Servicios--1:hover .box__content--Titulo {
     color: #fff; }
   .servicios .card__Servicios .box__Content--Txt {
-    font-size: 1em;
+    font-size: 1.1em;
     font-weight: 300;
     color: #fff;
     z-index: 1;
@@ -245,4 +248,7 @@
 
 @media (max-width: 769px) {
   .servicios {
-    margin-top: 40px; } }
+    margin-top: 40px; }
+    .servicios .servicios__Titulo {
+      line-height: 0.8;
+      margin-top: 20px; } }
