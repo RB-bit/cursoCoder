@@ -1,0 +1,272 @@
+.top-nav-collapse {
+  background-color: #000; }
+
+.menu {
+  font-family: "Nunito";
+  color: #fff; }
+  .menu .menu__items {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 2px;
+    font-weight: 500px;
+    position: relative; }
+  .menu .menu__items:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #9C00FF;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out; }
+  .menu .menu__items:hover:before {
+    visibility: visible;
+    width: 100%; }
+  .menu .menu__IconWpp {
+    color: #fff;
+    padding: 15px;
+    font-size: 25px; }
+  .menu .menu__IconWpp:hover {
+    color: #9C00FF;
+    text-decoration: none; }
+
+.pie {
+  background: #333333;
+  width: 100%;
+  padding: 5% 5% 10% 5%;
+  color: #fff; }
+  .pie .pie__Icons {
+    color: #fff;
+    padding: 15px;
+    font-size: 25px; }
+  .pie .pie__Icons:hover {
+    color: #9C00FF;
+    text-decoration: none; }
+
+.home {
+  background: url(../imagenes/home.png) no-repeat center center fixed;
+  display: table;
+  height: 700px;
+  width: 100%;
+  position: relative; }
+  .home .home__Text {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    color: #fff; }
+    .home .home__Text .home__Text-1 {
+      font-family: "Archivo Black";
+      font-size: 300%; }
+    .home .home__Text .home__Text-2 {
+      font-family: "Nunito";
+      font-size: 1.5rem; }
+  .home .home__IconScroll {
+    color: #9C00FF;
+    margin-top: 35px; }
+  .home .home__IconScroll:hover {
+    color: #fff;
+    text-decoration: none; }
+  .home .scroll .scroll__down {
+    position: absolute;
+    bottom: 5rem;
+    left: 50%;
+    transform: tranlateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .home .scroll .scroll__mouse {
+    width: 1.5rem;
+    height: 3rem;
+    border: 2px solid #fff;
+    border-radius: 2rem;
+    margin-bottom: .5rem;
+    display: flex; }
+    .home .scroll .scroll__mouse .scroll__mouse--item {
+      width: 0.5rem;
+      height: 0.5rem;
+      background-color: #fff;
+      display: block;
+      border-radius: 50px;
+      margin: auto;
+      animation: move-wheel 1s linear infinite; }
+  .home .scroll .scroll__arrow--item {
+    display: block;
+    width: 1rem;
+    height: 1rem;
+    border: 2px solid transparent;
+    border-right-color: #fff;
+    border-bottom-color: #fff;
+    transform: rotate(45deg);
+    animation: arrow-down 0.5s alternate infinite; }
+
+@keyframes move-wheel {
+  0% {
+    opacity: 0;
+    transform: translateY(-1rem); }
+  100% {
+    opacity: 01;
+    transform: translateY(1rem); } }
+
+@keyframes arrow-down {
+  0% {
+    opacity: 0; }
+  25% {
+    opacity: 0.25; }
+  50% {
+    opacity: 0.5; }
+  75% {
+    opacity: 0.75; }
+  100% {
+    opacity: 1; } }
+
+.queHacemos {
+  padding: 80px 0;
+  font-family: "Nunito"; }
+  .queHacemos .queHacemos__card {
+    border-radius: 30px; }
+
+.proyectos {
+  padding: 80px 0;
+  font-family: "Nunito";
+  background: linear-gradient(70deg, #B95ce4, #4f29cd, #333333) no-repeat center center fixed;
+  color: #fff; }
+  .proyectos .proyectos__Card {
+    background-color: #4F4F4F;
+    border: #fff solid 1px;
+    margin: 20px;
+    border-radius: 30px; }
+  .proyectos .proyectos__button {
+    border-radius: 30px; }
+
+.remotos {
+  padding: 50px; }
+  .remotos .remotos__Text {
+    text-transform: uppercase;
+    font-family: "Archivo Black";
+    font-size: 300%; }
+
+@media (max-width: 900px) {
+  .navbar:not(.top-nav-collapse) {
+    background: #000 !important; }
+  .menu__Logo {
+    width: 115px;
+    height: 29px; } }
+
+@media (max-width: 769px) {
+  .menu__Logo {
+    width: 115px;
+    height: 30px; }
+  .home__Text-1 {
+    font-size: 300%; }
+  .proyectos__Copy {
+    text-align: center; }
+  .remotos {
+    text-align: center; }
+  .pie__Icons {
+    font-size: 20px;
+    padding: 10px; }
+  .pie__Logo {
+    width: 124px;
+    height: 30px; }
+  .pie__Text {
+    margin: 15px;
+    font-size: 150%; } }
+
+.body__Servicios {
+  background: #000; }
+
+.servicios {
+  background: #fff;
+  margin-top: 77px;
+  padding-bottom: 30px;
+  padding: 40px 0px 40px 5px;
+  font-family: 'Nunito'; }
+  .servicios .card__Servicios .card__Servicios {
+    padding: 40px 0; }
+  .servicios .card__Servicios .card__Servicios--1 {
+    position: relative;
+    width: 270px;
+    height: 380px;
+    box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.05), inset -5px -5px 5px rgba(255, 255, 255, 0.5), 5px 5px 5px rgba(0, 0, 0, 0.05), -5px -5px 5px rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+    margin: 30px; }
+  .servicios .card__Servicios .box {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    transition: 0.5s; }
+  .servicios .card__Servicios .card__Servicios--1:hover .box {
+    transform: translateY(-50px);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(45deg, #B95ce4, #4f29cd); }
+  .servicios .card__Servicios .box__Content {
+    padding: 20px;
+    text-align: center; }
+    .servicios .card__Servicios .box__Content .box__Content--Nro {
+      position: absolute;
+      top: -10px;
+      right: 30px;
+      font-size: 8em;
+      color: rgba(0, 0, 0, 0.02);
+      transition: 0.5s;
+      pointer-events: none; }
+    .servicios .card__Servicios .box__Content .box__Content--Titulo {
+      font-size: 1.8em;
+      color: #333333;
+      z-index: 1;
+      transition: 0.5s; }
+  .servicios .card__Servicios .card__Servicios:hover .box__Content--Nro {
+    color: rgba(0, 0, 0, 0.05); }
+  .servicios .card__Servicios .card__Servicios--1:hover .box__Content--Titulo {
+    color: #fff; }
+  .servicios .card__Servicios .box__Content--Txt {
+    font-size: 1.1em;
+    font-weight: 300;
+    color: #bbb9b9;
+    z-index: 1;
+    transition: 0.5s; }
+  .servicios .card__Servicios .card__Servicios--1:hover .box__Content--Txt {
+    color: #fff; }
+  .servicios .card__Servicios .box__Content--Link {
+    position: relative;
+    padding: 8px 20px;
+    background: #9C00FF;
+    margin-top: 15px;
+    border-radius: 20px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 400;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); }
+  .servicios .card__Servicios .card__Servicios--1:hover .box__Content--Link {
+    background: #828282; }
+
+@media (max-width: 769px) {
+  .servicios {
+    margin-top: 40px; }
+    .servicios .servicios__Titulo {
+      line-height: 0.8;
+      margin-top: 20px; } }
+
+.quienesSomos {
+  background: #000; }
+
+.equipo {
+  margin-top: 77px;
+  padding: 70px 0px 100px 0px;
+  background: linear-gradient(45deg, #B95ce4, #4f29cd);
+  color: #fff;
+  font-family: "Nunito"; }
+  .equipo .equipo__Avatar {
+    margin-top: 25px; }
+  .equipo .equipo__descripcionPuesto {
+    font-size: 1rem; }
+
+@media (max-width: 769px) {
+  .equipo {
+    margin-top: 40px; } }

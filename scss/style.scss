@@ -1,0 +1,269 @@
+
+
+// Menú
+@import "menu";
+
+// Pie de página
+@import "footer";
+
+// Colores, gradients y tipografías
+@import "variables";
+
+//mixins
+@import "mixins";
+
+
+.home {
+    background: url(../imagenes/home.png) no-repeat center center fixed;
+    display: table;
+    height: $alto*7;
+    width: 100%;
+    position: relative;
+
+    .home__Text{
+        display: table-cell;
+        text-align: center;
+        vertical-align: middle;
+        color: $blanco;
+
+        .home__Text-1 {
+            font-family: $tipo2;
+            font-size: 300%;
+        }
+    
+        .home__Text-2 {
+            font-family: $tipo1;
+            font-size: 1.5rem;
+        }
+    }
+
+    .home__IconScroll {
+        color: $lila;
+        margin-top: 35px;
+        
+    }
+    
+    .home__IconScroll:hover {
+        color: $blanco;
+        text-decoration: none;
+    }
+
+    .scroll {
+
+        .scroll__down{
+            position: absolute;
+            bottom: 5rem;
+            left: 50%;
+            transform: tranlateX(-50%);
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .scroll__mouse {
+            width: 1.5rem;
+            height: 3rem;
+            border: 2px solid $blanco;
+            border-radius: 2rem;
+            margin-bottom: .5rem;
+            display: flex;
+
+            .scroll__mouse--item{
+                width: 0.5rem;
+                height: 0.5rem;
+                background-color: $blanco;
+                display: block;
+                border-radius: $bordes;
+                margin: auto;
+                animation: move-wheel 1s linear infinite;
+            }
+        }
+
+        .scroll__arrow--item {
+            display: block;
+            width: 1rem;
+            height: 1rem;
+            border: 2px solid transparent;
+            border-right-color: $blanco;
+            border-bottom-color: $blanco;
+            transform: rotate(45deg);
+            animation: arrow-down 0.5s alternate infinite;
+        }
+
+        @keyframes move-wheel {
+            0%{
+                opacity:0;
+                transform: translateY(-1rem);
+            }
+            100%{
+                opacity: 01;
+                transform: translateY(1rem);
+            }
+        }
+
+        @keyframes arrow-down {
+            0%{
+                opacity:0;
+            }
+            25%{
+                opacity: 0.25;
+            }
+            50%{
+                opacity: 0.5;
+            }
+            75%{
+                opacity: 0.75;
+            }
+            100%{
+                opacity: 1;
+            }
+        }
+        
+    }
+}
+
+
+.queHacemos {
+    padding: 80px 0;
+    font-family: $tipo1;
+
+    .queHacemos__card {
+        border-radius: ($bordes)-20;
+    }
+}
+
+.proyectos {
+    padding: 80px 0;
+    font-family: $tipo1;
+    background: $gradient-background;
+    color: $blanco;
+
+    .proyectos__Card {
+        background-color: $grisclaro;
+        border: $blanco solid 1px;
+        margin: 20px;
+        border-radius: ($bordes)-20;
+    }
+
+    .proyectos__button{
+        border-radius: ($bordes)-20;
+    }
+}
+
+.remotos {
+    padding: 50px;
+    .remotos__Text{
+        text-transform: uppercase;
+        font-family: $tipo2;
+        font-size: 300%;
+    }
+}
+
+// iPad
+@media (max-width: 900px) {
+    
+    .navbar:not(.top-nav-collapse) {
+        background: $negro !important;
+    }
+
+    .menu__Logo {
+        width: 115px;
+        height: 29px;
+    }
+
+}
+
+// Mobile
+@media (max-width: 769px)
+{
+    .menu__Logo {
+        width: 115px;
+        height: ($alto)-70;
+    }
+
+    .home__Text-1 {
+        font-size: 300%;
+    }
+
+    .proyectos__Copy {
+        text-align: center;
+    }
+
+    .remotos {
+        text-align: center;
+    }
+
+    .pie__Icons {
+        font-size: 20px;
+        padding: 10px;
+    }
+    .pie__Logo {
+        width: 124px;
+        height: ($alto)-70;
+    }
+
+    .pie__Text{
+        margin: 15px;
+        font-size: 150%;
+    }
+}
+
+
+// Estilos Servicios
+
+.body__Servicios {
+    background: $negro;
+}
+
+.servicios {
+    background: $blanco;
+    margin-top: 77px;
+    padding-bottom: 30px;
+    padding: 40px 0px 40px 5px;
+    font-family: 'Nunito';
+
+    .card__Servicios {
+        @include cardServicios
+    }
+  }
+
+  @media (max-width: 769px){
+      .servicios {
+        margin-top: 40px;
+
+        .servicios__Titulo{
+            line-height: 0.8;
+            margin-top: 20px;
+        }
+      }
+      
+  }
+
+
+// Estilos quines somos
+
+.quienesSomos {
+    background: $negro;
+}
+
+.equipo {
+    margin-top: 77px;
+    padding: 70px 0px 100px 0px;
+    background: $gradient;
+    color: $blanco;
+    font-family: $tipo1;
+
+    .equipo__Avatar {
+        margin-top: 25px;
+    }
+
+    .equipo__descripcionPuesto{
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 769px){
+    .equipo {
+      margin-top: 40px;
+    }
+}
