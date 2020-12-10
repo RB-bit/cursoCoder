@@ -16,7 +16,7 @@
 .home {
     background: url(../imagenes/home.png) no-repeat center center fixed;
     display: table;
-    height: 600px;
+    height: $alto*7;
     width: 100%;
     position: relative;
 
@@ -28,10 +28,12 @@
 
         .home__Text-1 {
             font-family: $tipo2;
+            font-size: 300%;
         }
     
         .home__Text-2 {
             font-family: $tipo1;
+            font-size: 1.5rem;
         }
     }
 
@@ -71,7 +73,7 @@
                 height: 0.5rem;
                 background-color: $blanco;
                 display: block;
-                border-radius: 50%;
+                border-radius: $bordes;
                 margin: auto;
                 animation: move-wheel 1s linear infinite;
             }
@@ -126,7 +128,7 @@
     font-family: $tipo1;
 
     .queHacemos__card {
-        border-radius: 30px;
+        border-radius: ($bordes)-20;
     }
 }
 
@@ -140,11 +142,11 @@
         background-color: $grisclaro;
         border: $blanco solid 1px;
         margin: 20px;
-        border-radius: 30px;
+        border-radius: ($bordes)-20;
     }
 
     .proyectos__button{
-        border-radius: 30px;
+        border-radius: ($bordes)-20;
     }
 }
 
@@ -176,7 +178,7 @@
 {
     .menu__Logo {
         width: 115px;
-        height: 29px;
+        height: ($alto)-70;
     }
 
     .home__Text-1 {
@@ -197,7 +199,7 @@
     }
     .pie__Logo {
         width: 124px;
-        height: 30px;
+        height: ($alto)-70;
     }
 
     .pie__Text{
@@ -214,9 +216,10 @@
 }
 
 .servicios {
-    background: $gris-blanco;
+    background: $blanco;
     margin-top: 77px;
     padding-bottom: 30px;
+    padding: 40px 0px 40px 5px;
     font-family: 'Nunito';
 
     .card__Servicios {
@@ -227,5 +230,40 @@
   @media (max-width: 769px){
       .servicios {
         margin-top: 40px;
+
+        .servicios__Titulo{
+            line-height: 0.8;
+            margin-top: 20px;
+        }
       }
+      
   }
+
+
+// Estilos quines somos
+
+.quienesSomos {
+    background: $negro;
+}
+
+.equipo {
+    margin-top: 77px;
+    padding: 70px 0px 100px 0px;
+    background: $gradient;
+    color: $blanco;
+    font-family: $tipo1;
+
+    .equipo__Avatar {
+        margin-top: 25px;
+    }
+
+    .equipo__descripcionPuesto{
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 769px){
+    .equipo {
+      margin-top: 40px;
+    }
+}

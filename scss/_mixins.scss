@@ -55,11 +55,10 @@
 
           .box__Content--Titulo{
             font-size: 1.8em;
-            color: $blanco;
+            color: $gris;
             z-index: 1;
             transition: 0.5s;
           }
-
         
       }
     
@@ -68,20 +67,20 @@
       }
     
     
-      .card__Servicios--1:hover .box__content--Titulo
+      .card__Servicios--1:hover .box__Content--Titulo
       {
         color: $blanco;
       }
     
       .box__Content--Txt{
-        font-size: 1em;
+        font-size: 1.1em;
         font-weight: 300;
-        color: $blanco;
+        color: $gris-blanco;
         z-index: 1;
         transition: 0.5s;
       }
     
-      .card__Servicios--1:hover .box__content--Txt
+      .card__Servicios--1:hover .box__Content--Txt
       {
         color: $blanco;
       }
