@@ -130,15 +130,16 @@
 .proyectos {
   padding: 80px 0;
   font-family: "Nunito";
-  background: linear-gradient(70deg, #B95ce4, #4f29cd, #333333) no-repeat center center fixed;
+  background: #bbb9b9;
   color: #fff; }
   .proyectos .proyectos__Card {
-    background-color: #4F4F4F;
-    border: #fff solid 1px;
+    background-color: #fff;
     margin: 20px;
-    border-radius: 30px; }
+    border-radius: 40px;
+    color: #000; }
   .proyectos .proyectos__button {
-    border-radius: 30px; }
+    border-radius: 30px;
+    color: #000; }
 
 .remotos {
   padding: 50px; }
@@ -270,3 +271,47 @@
 @media (max-width: 769px) {
   .equipo {
     margin-top: 40px; } }
+
+.portfolio {
+  background: #fff;
+  margin-top: 77px;
+  height: 100%; }
+  .portfolio .portfolio__Titular {
+    font-family: "Archivo Black";
+    padding-top: 25px; }
+  .portfolio .portfolio__Texto {
+    font-family: "Nunito"; }
+
+.trabajos {
+  padding-bottom: 50px;
+  font-family: "Nunito";
+  background: #fff; }
+  .trabajos .trabajos__Card {
+    background-color: #fff;
+    border-radius: 40px;
+    color: #000;
+    margin-top: 25px;
+    width: 15rem;
+    height: 20rem; }
+  .trabajos .trabajos__Button {
+    background-color: #9C00FF;
+    border-radius: 30px;
+    color: #fff; }
+  .trabajos .trabajo__Titulo {
+    color: #9C00FF; }
+
+@media (max-width: 769px) {
+  .portfolio__Titular {
+    text-align: center;
+    margin-left: 0px; }
+  .portfolio__Texto {
+    text-align: center;
+    margin-left: 0px; }
+  .trabajos__Card {
+    margin-top: 15px; } }
+
+@media (min-width: 769px) {
+  .portfolio__Titular {
+    margin-left: 50px; }
+  .portfolio__Texto {
+    margin-left: 50px; } }
