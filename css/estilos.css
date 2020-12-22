@@ -46,16 +46,20 @@
     text-decoration: none; }
 
 .home {
-  background: url(../imagenes/home.jpg) no-repeat center center fixed;
-  display: table;
-  height: 700px;
-  width: 100%;
-  position: relative; }
+  position: relative;
+  display: flex;
+  align-items: center; }
+  .home .home__Img {
+    width: 100%;
+    height: 700px; }
   .home .home__Text {
-    display: table-cell;
+    position: absolute;
+    width: 100%;
+    color: #fff;
     text-align: center;
-    vertical-align: middle;
-    color: #fff; }
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
     .home .home__Text .home__Text-1 {
       font-family: "Archivo Black";
       font-size: 300%; }
