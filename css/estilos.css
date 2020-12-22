@@ -68,7 +68,6 @@
     color: #4F4F4F; }
   .construccion .layer .layer-button {
     position: absolute;
-    margin-top: 250px;
     background-color: #9C00FF;
     border-radius: 30px;
     color: #fff; }
@@ -76,6 +75,10 @@
 @media (max-width: 769px) {
   .layer-button {
     margin-top: 410px; } }
+
+@media (min-width: 769px) {
+  .layer-button {
+    margin-top: 250px; } }
 
 .home {
   position: relative;

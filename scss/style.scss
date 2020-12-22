@@ -45,7 +45,6 @@
         }
         .layer-button {
             position: absolute;
-            margin-top: 250px;
             background-color: $lila;
             border-radius: ($bordes)-20;
             color: $blanco;
@@ -53,12 +52,16 @@
     }
 }
 
-// Mobile
-@media (max-width: 769px)
-{
+// Mobile - Ipad
+@media (max-width: 769px) {
     .layer-button {
         margin-top: 410px;
+    }
+}
 
+@media  (min-width: 769px) {
+    .layer-button {
+        margin-top: 250px;
     }
 }
 
