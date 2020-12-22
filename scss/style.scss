@@ -12,6 +12,58 @@
 //mixins
 @import "mixins";
 
+
+// Sitio en construccion
+
+.construccion{
+    
+    .layer{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        height: 500px;
+
+        .layer-img{
+            width: 190px;
+            height: 150px;
+            position: relative;
+        }
+        .layer-text-titulo{
+            text-align: center;
+            font-family: $tipo1;
+            color:$grisclaro;
+        }
+        .layer-text{
+            text-align: center;
+            font-family: $tipo1;
+            color:$grisclaro;
+        }
+        .layer-text2{
+            text-align: center;
+            font-family: $tipo1;
+            color:$grisclaro;
+        }
+        .layer-button {
+            position: absolute;
+            margin-top: 250px;
+            background-color: $lila;
+            border-radius: ($bordes)-20;
+            color: $blanco;
+        }
+    }
+}
+
+// Mobile
+@media (max-width: 769px)
+{
+    .layer-button {
+        margin-top: 410px;
+
+    }
+}
+
+// Final sitio en construccion
+
 .home {
     position: relative;
     display: flex;

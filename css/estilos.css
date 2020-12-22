@@ -45,6 +45,38 @@
     color: #9C00FF;
     text-decoration: none; }
 
+.construccion .layer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 500px; }
+  .construccion .layer .layer-img {
+    width: 190px;
+    height: 150px;
+    position: relative; }
+  .construccion .layer .layer-text-titulo {
+    text-align: center;
+    font-family: "Nunito";
+    color: #4F4F4F; }
+  .construccion .layer .layer-text {
+    text-align: center;
+    font-family: "Nunito";
+    color: #4F4F4F; }
+  .construccion .layer .layer-text2 {
+    text-align: center;
+    font-family: "Nunito";
+    color: #4F4F4F; }
+  .construccion .layer .layer-button {
+    position: absolute;
+    margin-top: 250px;
+    background-color: #9C00FF;
+    border-radius: 30px;
+    color: #fff; }
+
+@media (max-width: 769px) {
+  .layer-button {
+    margin-top: 410px; } }
+
 .home {
   position: relative;
   display: flex;
