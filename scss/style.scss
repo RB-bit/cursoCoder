@@ -141,23 +141,27 @@
     }
 }
 
-.proyectos {
-    padding: 80px 0;
-    font-family: $tipo1;
-    background: $gris-blanco;
-    color: $blanco;
+// .proyectos {
+//     padding: 80px 0;
+//     font-family: $tipo1;
+//     background: $gris-blanco;
+//     color: $blanco;
 
-    .proyectos__Card {
-        background-color: $blanco;
-        margin: 20px;
-        border-radius: ($bordes)-10;
-        color: $negro;
-    }
+//     .proyectos__Card {
+//         background-color: $blanco;
+//         margin: 20px;
+//         border-radius: ($bordes)-10;
+//         color: $negro;
+//     }
 
-    .proyectos__button{
-        border-radius: ($bordes)-20;
-        color: $negro;
-    }
+//     .proyectos__button{
+//         border-radius: ($bordes)-20;
+//         color: $negro;
+//     }
+// }
+
+.clientes{
+    @include cardClientes
 }
 
 .remotos {

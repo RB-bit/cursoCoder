@@ -101,4 +101,13 @@
         background: #828282;
       }
 }
+
+
+@mixin cardClientes {
+  .portfolio__Card{
+    height: 700px;
+  }
+}
+
+  
     
