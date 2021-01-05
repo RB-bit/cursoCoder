@@ -12,6 +12,9 @@
 //mixins
 @import "mixins";
 
+
+// Estilos Home ---------------------------------------------------------------
+
 .home {
     position: relative;
     display: flex;
@@ -141,34 +144,26 @@
     }
 }
 
-// .proyectos {
-//     padding: 80px 0;
-//     font-family: $tipo1;
-//     background: $gris-blanco;
-//     color: $blanco;
-
-//     .proyectos__Card {
-//         background-color: $blanco;
-//         margin: 20px;
-//         border-radius: ($bordes)-10;
-//         color: $negro;
-//     }
-
-//     .proyectos__button{
-//         border-radius: ($bordes)-20;
-//         color: $negro;
-//     }
-// }
 
 .clientes{
-    background: $gradient;
+    background: $blanco;
     width: 100%;
     height: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
     @include cardClientes
 }
 
+.titulo{
+    font-family: $tipo1;
+    text-align: center;
+    margin-bottom: 20px;
+    color: $gris;
+}
+
 .remotos {
-    padding: 50px;
+    padding: 10px;
     .remotos__Text{
         text-transform: uppercase;
         font-family: $tipo2;
@@ -226,7 +221,7 @@
 }
 
 
-// Estilos Servicios
+// Estilos servicios ---------------------------------------------------------------
 
 .body__Servicios {
     background: $negro;
@@ -257,7 +252,8 @@
   }
 
 
-// Estilos quines somos
+// Estilos equipo - quienes somos ---------------------------------------------------------------
+
 
 .quienesSomos {
     background: $negro;

@@ -132,28 +132,35 @@
     border-radius: 30px; }
 
 .clientes {
-  background: linear-gradient(45deg, #B95ce4, #4f29cd);
+  background: #fff;
   width: 100%;
-  height: 100%; }
+  height: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px; }
   .clientes .portfolio__Card {
-    max-width: 140px !important;
+    max-width: 120px !important;
     height: 100px;
-    background: rgba(255, 255, 255, 0.5);
+    background: #fff;
     margin: 5px;
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
-    border-radius: 15px;
-    backdrop-filter: blur(100px); }
-    .clientes .portfolio__Card .portfolio__Card-content {
-      opacity: 0.5;
-      transition: 0.5s; }
+    border-radius: 15px; }
     .clientes .portfolio__Card .portfolio__Card-img {
       position: relative;
-      border: 10px solid rgba(0, 0, 0, 0.25); }
-  .clientes .portfolio__Card:hover .portfolio__Card-content {
-    opacity: 1; }
+      border: 10px solid rgba(0, 0, 0, 0.25);
+      color: #9C00FF; }
+  @media (max-width: 769px) {
+    .clientes .portfolio__Card {
+      max-width: 90px !important;
+      margin-left: 17px; } }
+
+.titulo {
+  font-family: "Nunito";
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333333; }
 
 .remotos {
-  padding: 50px; }
+  padding: 10px; }
   .remotos .remotos__Text {
     text-transform: uppercase;
     font-family: "Archivo Black";
