@@ -47,6 +47,10 @@
   .pie .pie__Icons:hover {
     color: #9C00FF;
     text-decoration: none; }
+  .pie .pie__Contacto {
+    font-family: "Nunito";
+    font-size: 1rem;
+    color: #9C00FF; }
 
 .home {
   position: relative;
