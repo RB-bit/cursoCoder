@@ -119,11 +119,24 @@
     }
   }
 
+  // Ipad
+  @media (min-width: 768px){
+    .portfolio__Card{
+      max-width: 110px !important;
+    }
+  }
+
   // Mobile
-    @media (max-width: 769px) {
+    @media (max-width: 767px) {
       .portfolio__Card{
-        max-width: 90px !important;
-        margin-left: 17px;
+        max-width: 125px !important;
+      }
+
+    }
+
+    @media (max-width: 375px) {
+      .portfolio__Card{
+        max-width: 110px !important;
       }
 
     }

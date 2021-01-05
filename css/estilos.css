@@ -152,10 +152,15 @@
       position: relative;
       border: 10px solid rgba(0, 0, 0, 0.25);
       color: #9C00FF; }
-  @media (max-width: 769px) {
+  @media (min-width: 768px) {
     .clientes .portfolio__Card {
-      max-width: 90px !important;
-      margin-left: 17px; } }
+      max-width: 110px !important; } }
+  @media (max-width: 767px) {
+    .clientes .portfolio__Card {
+      max-width: 125px !important; } }
+  @media (max-width: 375px) {
+    .clientes .portfolio__Card {
+      max-width: 110px !important; } }
 
 .titulo {
   font-family: "Nunito";
@@ -201,8 +206,10 @@
     height: 30px; }
   .home__Text-1 {
     font-size: 300%; }
-  .proyectos__Copy {
-    text-align: center; }
+  .main-clientes {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
   .remotos {
     text-align: center; }
   .pie__Icons {

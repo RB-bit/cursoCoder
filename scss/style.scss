@@ -222,8 +222,10 @@
         font-size: 300%;
     }
 
-    .proyectos__Copy {
-        text-align: center;
+    .main-clientes{
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .remotos {
