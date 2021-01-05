@@ -41,6 +41,9 @@
     color: #fff;
     padding: 15px;
     font-size: 25px; }
+  .pie .pie__Text {
+    font-family: "Nunito";
+    font-size: 1.2rem; }
   .pie .pie__Icons:hover {
     color: #9C00FF;
     text-decoration: none; }
@@ -62,10 +65,10 @@
     align-items: center; }
     .home .home__Text .home__Text-1 {
       font-family: "Archivo Black";
-      font-size: 300%; }
+      font-size: 350%; }
     .home .home__Text .home__Text-2 {
       font-family: "Nunito";
-      font-size: 1.5rem; }
+      font-size: 1.1rem; }
   .home .home__IconScroll {
     color: #9C00FF;
     margin-top: 35px; }
@@ -127,16 +130,17 @@
 
 .queHacemos {
   padding: 80px 0;
-  font-family: "Nunito"; }
+  font-family: "Nunito";
+  background-color: #333333; }
   .queHacemos .queHacemos__card {
-    border-radius: 30px; }
+    border-radius: 30px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); }
 
 .clientes {
   background: #fff;
   width: 100%;
   height: 100%;
-  padding-top: 20px;
-  padding-bottom: 20px; }
+  padding-top: 20px; }
   .clientes .portfolio__Card {
     max-width: 120px !important;
     height: 100px;
@@ -160,11 +164,29 @@
   color: #333333; }
 
 .remotos {
-  padding: 10px; }
+  margin-top: 70px;
+  padding-bottom: 50px;
+  height: 100%;
+  color: #fff;
+  background: linear-gradient(45deg, #B95ce4, #4f29cd);
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
   .remotos .remotos__Text {
     text-transform: uppercase;
     font-family: "Archivo Black";
     font-size: 300%; }
+  .remotos .remotos__Parrafo {
+    font-family: "Nunito";
+    font-size: 1.1rem; }
+
+@media (min-width: 901px) {
+  .remotos__Text {
+    padding-top: 50px; }
+  .remotos__Parrafo {
+    width: 650px; } }
 
 @media (max-width: 900px) {
   .navbar:not(.top-nav-collapse) {
@@ -191,7 +213,11 @@
     height: 30px; }
   .pie__Text {
     margin: 15px;
-    font-size: 150%; } }
+    font-size: 150%; }
+  .remotos__Text {
+    padding: 30px; }
+  .remotos__Parrafo {
+    padding: 30px; } }
 
 .body__Servicios {
   background: #000; }
