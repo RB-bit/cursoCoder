@@ -298,6 +298,16 @@
     background: $gradient;
     color: $blanco;
     font-family: $tipo1;
+    
+    .equipo__Titulo{
+        text-align: center;
+        font-family: $tipo2;
+        font-size: 2.2rem;
+    }
+
+    .equipo__bajada{
+        text-align: center;
+    }
 
     .equipo__Avatar {
         margin-top: 25px;
@@ -307,6 +317,7 @@
         font-size: 1rem;
     }
 }
+
 
 @media (max-width: 769px){
     .equipo {
