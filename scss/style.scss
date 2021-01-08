@@ -272,6 +272,12 @@
     }
   }
 
+
+.creativeHacking {
+    background-color: $blanco;
+    @include SeccionCreativeHacking
+}
+
   @media (max-width: 769px){
       .servicios {
         margin-top: 40px;
@@ -318,6 +324,22 @@
     }
 }
 
+.enviarcv{
+    background: $blanco;
+    .enviarcv__card{
+        margin: 25px;
+        padding: 20px;
+        box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.05),
+        inset -5px -5px 5px rgba(255, 255, 255, 0.5),
+        5px 5px 5px rgba(0, 0, 0, 0.05),
+        -5px -5px 5px rgba(255, 255, 255, 0.5);
+        border-radius: 15px;
+    }
+    .enviarcv__card-boton{
+        border-radius: 15px;
+        background-color: $lila;
+    }
+}
 
 @media (max-width: 769px){
     .equipo {
