@@ -11,14 +11,14 @@
     
       .card__Servicios--1 {
         position: relative;
-        width: 270px;
+        width: 90%;
         height: 380px;
         box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.05),
                     inset -5px -5px 5px rgba(255, 255, 255, 0.5),
                     5px 5px 5px rgba(0, 0, 0, 0.05),
                     -5px -5px 5px rgba(255, 255, 255, 0.5);
         border-radius: 15px;
-        margin: 30px;
+        margin: 15px;
       }
     
       .box {
@@ -103,6 +103,7 @@
 }
 
 
+// Sección creative hacking en servicios
 
 @mixin SeccionCreativeHacking {
       .creativeHacking__Card {
@@ -112,13 +113,13 @@
       .creativeHacking__Card-1 {
         position: relative;
         width: 100%;
-        height: 380px;
+        height: 510px;
         box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.05),
                     inset -5px -5px 5px rgba(255, 255, 255, 0.5),
                     5px 5px 5px rgba(0, 0, 0, 0.05),
                     -5px -5px 5px rgba(255, 255, 255, 0.5);
         border-radius: 15px;
-        margin: 30px;
+        margin: 40px;
       }
 
       .box {
@@ -202,13 +203,17 @@
       }
 }
 
+
 @media (max-width: 769px){
 
   .creativeHacking__Card-1{
-    width: 80% !important;
+    width: 90% !important;
+    margin: 20px !important;
   }
   
 }
+
+// Card Clientes en la Home
 
 @mixin cardClientes {
   .portfolio__Card{
